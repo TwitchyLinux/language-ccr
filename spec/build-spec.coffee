@@ -1,20 +1,13 @@
-describe 'Bazel grammar', ->
+describe 'CCR grammar', ->
   grammar = null
 
   beforeEach ->
     waitsForPromise ->
-      atom.packages.activatePackage('language-bazel')
+      atom.packages.activatePackage('language-ccr')
 
     runs ->
-      grammar = atom.grammars.grammarForScopeName('source.build')
+      grammar = atom.grammars.grammarForScopeName('source.ccr')
 
   it 'parses the grammar', ->
     expect(grammar).toBeTruthy()
-    expect(grammar.scopeName).toBe 'source.build'
-
-
-  it 'tokenizes strings', ->
-    {tokens} = grammar.tokenizeLine 'var = "foobar"'
-
-    expect(tokens[0]).toEqual value: 'var', scopes: ['source.build', 'meta.assignment.build', 'variable.other.build']
-    expect(tokens[5]).toEqual value: 'foobar', scopes: ['source.build', 'meta.assignment.build', 'string.quoted.double.build']
+    expect(grammar.scopeName).toBe 'source.ccr'

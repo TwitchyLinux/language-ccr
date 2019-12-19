@@ -1,0 +1,9 @@
+scopeName: 'source.sky'
+name: 'Skylark'
+fileTypes: [
+  'sky'
+  'starlark'
+]
+patterns: [
+  include: 'source.python'
+]

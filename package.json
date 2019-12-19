@@ -1,15 +1,14 @@
 {
-  "name": "language-bazel",
-  "version": "0.3.4",
-  "description": "Build (bazel.io) language support for Atom",
+  "name": "language-ccr",
+  "version": "0.0.1",
+  "description": "Core Contracts language support for Atom",
   "keywords": [
-    "Bazel",
-    "Build",
+    "CoreContracts",
+    "ccr",
     "Skylark",
-    "BUILD",
-    "Buck"
+    "Starlark"
   ],
-  "repository": "https://github.com/ptsurko/language-bazel",
+  "repository": "https://github.com/TwitchyLinux/language-ccr",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

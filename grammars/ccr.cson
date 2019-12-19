@@ -1,7 +1,7 @@
-scopeName: 'source.bzl'
-name: 'Skylark'
+scopeName: 'source.ccr'
+name: 'CoreContracts'
 fileTypes: [
-  'bzl'
+  'ccr'
 ]
 patterns: [
   include: 'source.python'
